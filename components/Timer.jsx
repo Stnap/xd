@@ -24,7 +24,7 @@ const Timer = (props, key) => (
       newInitialRemainingTime: 9,
       
     })}
-    //onUpdate={(time) => console.log(time)}
+    //onUpdate={() => console.log("tick")}
   >
     {({ remainingTime,color }) =>(
 
@@ -35,7 +35,7 @@ const Timer = (props, key) => (
 );
 
 function alerta(){
-  alert("alerta")
+  alert("se acabo el tiempo");
 }
 
 

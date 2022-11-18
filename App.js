@@ -15,6 +15,7 @@ import Timer from "./components/Timer";
 const App = () => {
   const [isPlaying, setIsPlaying] = React.useState(false);
   const [key, setKey] = React.useState(0);
+  const currencies = ["$", "¥", "€"];
 
   return (
     <>
