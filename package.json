@@ -12,7 +12,11 @@
     "expo": "~47.0.6",
     "expo-status-bar": "~1.4.2",
     "react": "18.1.0",
-    "react-native": "0.70.5"
+    "react-native": "0.70.5",
+    "react-native-countdown-circle-timer": "^3.0.9",
+    "react-native-reanimated": "~2.12.0",
+    "react-native-svg": "13.4.0",
+    "react-native-ticker": "^5.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
