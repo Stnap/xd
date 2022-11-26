@@ -3,19 +3,27 @@ yarn add react-native-countdown-circle-timer
 npm install react-native-svg
 
 yarn add react-native-ticker
-yarn add react-native-reanimated || expo install react-native-reanimated
+yarn add react-native-reanimated || expo install react-native-reanimated  // en babel:  plugins: ["react-native-reanimated/plugin"],
 */
 
 import { StatusBar } from "expo-status-bar";
 import React, { useState } from "react";
-import { Button, Text, StyleSheet, View, FlatList, Alert } from "react-native";
+import {
+  Button,
+  Text,
+  StyleSheet,
+  View,
+  FlatList,
+  Alert,
+  TextInput,
+} from "react-native";
 import Header from "./components/Header";
 import Timer from "./components/Timer";
 
 const App = () => {
   const [isPlaying, setIsPlaying] = React.useState(false);
   const [key, setKey] = React.useState(0);
-  const currencies = ["$", "¥", "€"];
+  const [text, onChangeText] = React.useState("Useless Text");
 
   return (
     <>
@@ -29,6 +37,7 @@ const App = () => {
         />
         <Button title="Reiniciar" onPress={() => setKey((prev) => prev + 1)} />
       </View>
+      
     </>
   );
 };
